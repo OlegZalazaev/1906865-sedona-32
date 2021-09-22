@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Олег Залазаев](https://up.htmlacademy.ru/htmlcss/32/user/1906865).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
