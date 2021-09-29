@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="about.html">О Седоне </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="hotels.html">Гостиницы </a>
+        </li>
+      </ul>
+      <img class="logo" src="" alt="Логотип Седона">
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">
+              Поиск
+            </span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">
+              Избранное
+            </span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Хочу сюда! </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-index">
+    <h1 class="visually-hidden"> Добро пожаловать в Седону</h1>
+    <img class="main-img" src="" alt="Приветственный Логотип">
+    <section class="advantages">
+      <h2 class="main-down">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h3 class="main-down2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h3>
+      <ol class="causes">
+        <li class="cause-item">
+          <h2 class="cause-title1">Настоящий городок</h2>
+          <p class="cause-description1">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img src="" class="town" alt="Городок">
+          <h2 class="cause-title">Жильё</h2>
+          <p class="cause-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <h2 class="cause-title">Еда</h2>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <h2 class="cause-title">Сувениры</h2>
+          <p class="cause-description">Не только китайского, но и настоящего местного производства!</p>
+        </li>
+        <li class="cause-item">
+          <h2 class="cause-title1">Там есть мост дьявола</h2>
+          <p class="cause-description1">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img src="" class="bridge" alt="мост">
+        </li>
+        <li class="cause-item">
+          <h2 class="cause-title">Небольшая площадь</h2>
+          <p class="cause-description">Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="cause-item">
+          <h2 class="cause-title">Красивая дорога</h2>
+          <p class="cause-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
+        <li class="cause-item">
+          <h2 class="cause-title">Мало туристов</h2>
+          <p class="cause-description">Большинство едет в Гранд Каньон и толпится там</p>
+        </li>
+        </ol>
+    </section>
+    <section class="order">
+      <h2 class="main-down">Заинтересовались?</h2>
+      <h3 class="main-down2">Укажите предполагаемые даты поездки,
+        и мы покажем вам лучшие предложения гостиниц в Седоне </h3>
+      <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <h2 class="footer_down">Подпишитесь на рассылку</h2>
+    <p class="footer_down2">Только полезная информация и никакого спама,
+      честное бойскаутское!</p> <!--может здесь span еще подойдет?-->
+    <form class="email" action="https://echo.htmlacademy.ru/" method="POST">
+      <input type="email" name="email" value="Ваш e-mail">
+      <input type="submit" value="Подписаться">
+    </form>
+    <ul class="messengers">
+      <li class="messengers-items">
+        <a class="messengers-link" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">twitter</span>
+        </a>
+      </li>
+      <li class="messengers-items">
+        <a class="messengers-link" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">facebook</span>
+        </a>
+      </li>
+      <li class="messengers-items">
+        <a class="messengers-link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">youtube</span>
+        </a>
+      </li>
+    </ol>
+    <address class="contact-phone">
+      <a class="number-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+    </address>
+<!--ЛИБО-->
+    <a class="link-academy" href="https://www.htmlacademy.ru">
+    <img class="logo-html" src="" alt="Логотип html">
+    </a>
+<!--ЛИБО-->
+    <a class="link-academy" href="https://www.htmlacademy.ru">
+      <span class="visually-hidden">Логотип html</span>
+      </a>
+  </footer>
+</body>
 </html>
