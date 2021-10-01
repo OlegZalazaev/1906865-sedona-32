@@ -17,7 +17,7 @@
           <a class="navigation-link" href="about.html">О Седоне </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы </a>
+          <a class="navigation-link navigation-link-current">Гостиницы </a>
         </li>
       </ul>
       <img class="logo" src="" alt="Логотип Седона">
@@ -108,7 +108,7 @@
           </button>
         </fieldset>
         <button class="button" type="submit">Применить</button>
-        <button class="button1" type="submit">Сбросить</button>
+        <button class="button1" type="reset">Сбросить</button>
       </form>
     </section>
     <section class="results">
@@ -140,6 +140,8 @@
         <li class="hotel-list">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-img" src="" alt="Amara Resort & Spa">
+          </a>
+          <a class="hotel-card-link-title" href="#">
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="hotel-card-type">
@@ -152,7 +154,9 @@
             Подробнее
           </a>
           <button class="button-favourites" type="button">В избранное</button>
-          <img class="stars" src="" alt="Звезды отеля">
+          <span class="stars">
+            <span class="visually-hidden"> 4 Звезды отеля</span>
+          </span>
           <p class="rating">
             Рейтинг:8,5
           </p>
@@ -160,6 +164,8 @@
         <li class="hotel-list">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-img" src="" alt="Desert Quail Inn">
+          </a>
+          <a class="hotel-card-link-title" href="#">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <p class="hotel-card-type">
@@ -172,7 +178,9 @@
             Подробнее
           </a>
           <button class="button-favourites" type="button">В избранное</button>
-          <img class="stars" src="" alt="Звезды отеля">
+          <span class="stars">
+            <span class="visually-hidden"> 3 Звезды отеля</span>
+          </span>
           <p class="rating">
             Рейтинг:8,9
           </p>
@@ -180,6 +188,8 @@
         <li class="hotel-list">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-img" src="" alt="Villas at Poco Diablo">
+          </a>
+          <a class="hotel-card-link-title" href="#">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           </a>
           <p class="hotel-card-type">
@@ -191,8 +201,10 @@
           <a class="more" href="#">
             Подробнее
           </a>
-          <button class="button-favourites-set" type="button">В избранном</button>
-          <img class="stars" src="" alt="Звезды отеля">
+          <button class="button-favourites button-favourites-set" type="button">В избранном</button>
+          <span class="stars">
+            <span class="visually-hidden"> 2 Звезды отеля</span>
+          </span>
           <p class="rating">
             Рейтинг:9,2
           </p>
@@ -200,6 +212,8 @@
         <li class="hotel-list">
           <a class="hotel-card-link" href="#">
             <img class="hotel-card-img" src="" alt="GreenTree Inn">
+          </a>
+          <a class="hotel-card-link-title" href="#">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
           </a>
           <p class="hotel-card-type">
@@ -212,13 +226,15 @@
             Подробнее
           </a>
           <button class="button-favourites" type="button">В избранное</button>
-          <img class="stars" src="" alt="Звезды отеля">
+          <span class="stars">
+            <span class="visually-hidden"> 2 Звезды отеля</span>
+          </span>
           <p class="rating">
             Рейтинг:9,2
           </p>
         </li>
       </ul>
-      <button class="pagination pagination-more" type="button">Показать еще</button>
+      <button class="pagination pagination-more" type="button">Загрузить еще</button>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-current pagination-disabled">1</a>
@@ -245,17 +261,17 @@
         </label>
         <select class="number-control" id="hotels-number" name="numbers">
           <option value="4">4</option>
-          <option value="4">5</option>
-          <option value="4">6</option>
-          <option value="4">7</option>
-          <option value="4">8</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
         </select>
         <button class="visually-hidden">Показать</button>
       </form>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer without">
     <h2 class="footer-down">Подпишитесь на рассылку</h2>
     <p class="footer-down2">
       Только полезная информация и никакого спама, честное бойскаутское!
