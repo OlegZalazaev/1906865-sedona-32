@@ -1,0 +1,94 @@
+body{
+  background-color: #F2F2F2;
+  color: black;
+}
+.main-img{
+  background-color: blueviolet;
+  background-image:
+    url("../images/decorate/mask.png"),
+    url("../images/decorate/index-background.jpg");
+    background-size: 1200px 57px, 1200px 485px;
+    background-repeat: no-repeat;
+    background-position: bottom, center;
+}
+.cause-title1 {
+  background-color: #83B3D3;
+}
+.cause-title{
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.cause-description{
+  background-color: rgba(131, 179, 211, 0.12);
+}
+li:nth-child(4){
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.cause-description1{
+  background-color: #83B3D3;
+}
+.cause-list-house{
+  background-image: url("../images/icons/house.svg");
+    background-repeat: no-repeat;
+    background-size: 75px 72px;
+}
+.cause-list-food{
+  background-color:#FFFFFF;
+  background-image: url("../images/icons/burger.svg");
+    background-repeat: no-repeat;
+    background-size: 74px 70px;
+}
+h4 .cause-white{
+  background-color: #FFFFFF;
+}
+.cause-list-gifts{
+    background-image: url("../images/icons/gift.svg");
+      background-repeat: no-repeat;
+      background-size: 64px 76px;
+}
+.order{
+  background-color:#FFFFFF;
+}
+.page-footer{
+  background-image: url("../images/decorate/background-blur.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px 411px;
+}
+.contacts{
+  background-color:#FFFFFF;
+}
+.twitter-link{
+  background-image: url("../images/icons/twitter.svg");
+  background-repeat:no-repeat;
+}
+.facebook-link{
+  background-image: url("../images/icons/facebook.svg");
+  background-repeat:no-repeat;
+}
+.youtube-link{
+  background-image: url("../images/icons/youtube.svg");
+  background-repeat:no-repeat;
+}
+
+.main-inner{
+background-image: url("../images/decorate/catalog-background\ 1-blur.jpg");
+  background-size: 1200px 408px;
+background-repeat:no-repeat;
+}
+.button-list-grid{
+  background-image: url("../images/icons/sotring-grid.svg");
+  background-repeat:no-repeat;
+}
+.button-list-slide{
+  background-image: url("../images/icons/sotring-slideshow.svg");
+  background-repeat:no-repeat;
+}
+.button-list{
+  background-image: url("../images/icons/sorting-list.svg");
+  background-repeat:no-repeat;
+}
+.stars{
+  background-image: url("../images/icons/star.svg");
+  background-repeat:no-repeat;
+}
+.page-footer.without{
+  background-color:#FFFFFF;

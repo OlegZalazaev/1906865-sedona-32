@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
           <a class="navigation-link" href="catalog.html">Гостиницы </a>
         </li>
       </ul>
-      <img class="logo" src="" alt="Логотип Седона">
+      <img class="logo" src="images/sedona.svg" width="138" height="70" alt="Логотип Седона">
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
@@ -40,7 +41,9 @@
   </header>
   <main class="main-index">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-    <img class="main-img" src="" alt="Приветственный Логотип">
+    <div class="main-img">
+    <img class="main-image" src="images/welcome.svg" width="458" height="352" alt="Приветственный Логотип">
+    </div>
     <section class="advantages">
       <h2 class="main-down">
         Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -54,21 +57,21 @@
           <p class="cause-description1">
             Седона — не аттракцион для туристов, там течёт своя жизнь
           </p>
-          <img src="" class="town" alt="Городок">
+          <img class="town" src="images/photo-1.jpg" width="800" height="384" alt="Городок">
           <ul class="cause-list">
-            <li class="cause-list-item">
+            <li class="cause-list-house">
               <h4 class="cause-title">Жильё</h4>
               <p class="cause-description">
                 Рекомендуем пожить в настоящем мотеле, всё как в кино!
               </p>
             </li>
-            <li class="cause-list-item">
-              <h4 class="cause-title">Еда</h4>
+            <li class="cause-list-food">
+              <h4 class="cause-title cause-white">Еда</h4>
               <p class="cause-description">
                 Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
-            <li class="cause-list-item">
+            <li class="cause-list-gifts">
               <h4 class="cause-title">Сувениры</h4>
               <p class="cause-description">
                 Не только китайского, но и настоящего местного производства!
@@ -77,7 +80,7 @@
           </ul>
         </li>
         <li class="cause-item">
-          <img src="" class="bridge" alt="мост">
+          <img class="bridge" src="images/photo-2.jpg" width="800" height="384" alt="мост">
           <h3 class="cause-title1">Там есть мост дьявола</h3>
           <p class="cause-description1">
             Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -112,40 +115,44 @@
       <a class="button button-search" href="#">Поиск в гостинице в седоне</a>
     </section>
   </main>
-  <footer class="page-footer">
-    <h2 class="footer-down">Подпишитесь на рассылку</h2>
-    <p class="footer-down2">
-      Только полезная информация и никакого спама, честное бойскаутское!
-    </p>
-    <form class="email" action="https://echo.htmlacademy.ru/" method="POST">
-      <label>
-        <input type="email" name="email" placeholder="Ваш e-mail">
-      </label>
-      <button class="button" type="submit">Подписаться</button>
-    </form>
-    <ul class="messengers">
-      <li class="messengers-items">
-        <a class="messengers-link" href="https://twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">twitter</span>
-        </a>
-      </li>
-      <li class="messengers-items">
-        <a class="messengers-link" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">facebook</span>
-        </a>
-      </li>
-      <li class="messengers-items">
-        <a class="messengers-link" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">youtube</span>
-        </a>
-      </li>
-    </ul>
-    <address class="contact-phone">
-      <a class="number-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-    </address>
-    <a class="link-academy" href="https://www.htmlacademy.ru">
-      <img class="logo-html" src="" alt="Логотип html">
-    </a>
+  <footer class="footer">
+    <div class="page-footer">
+      <h2 class="footer-down">Подпишитесь на рассылку</h2>
+      <p class="footer-down2">
+        Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
+      <form class="email" action="https://echo.htmlacademy.ru/" method="POST">
+        <label>
+          <input type="email" name="email" placeholder="Ваш e-mail">
+        </label>
+        <button class="button" type="submit">Подписаться</button>
+      </form>
+    </div>
+    <div class="contacts">
+      <ul class="messengers">
+        <li class="messengers-items">
+          <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="messengers-items">
+          <a class="facebook-link" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="messengers-items">
+          <a class="youtube-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
+      <address class="contact-phone">
+        <a class="number-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      </address>
+      <a class="link-academy" href="https://www.htmlacademy.ru">
+        <img class="logo-html" src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип html">
+      </a>
+    </div>
   </footer>
 </body>
 
