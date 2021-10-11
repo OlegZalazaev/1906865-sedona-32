@@ -26,7 +26,6 @@ body {
 .navigation-link {
  font-size: 20px;
  line-height: 26px;
- color: #000000;
 
  text-decoration: none;
 }
@@ -56,11 +55,9 @@ body {
  color: #ffffff;
 }
 .cause-title {
- font-family: inherit;
  font-size: 24px;
  line-height: 28px;
  font-weight: 700;
- color: #000000;
 
  text-transform: uppercase;
 }
@@ -112,7 +109,6 @@ body {
  font-size: 40px;
  line-height: 40px;
  font-weight: 400;
- color: #000000;
 
  text-decoration: none;
  text-transform: uppercase;
@@ -178,7 +174,6 @@ body {
  font-size: 24px;
  line-height: 31px;
  font-weight: 700;
- color: #000000;
 }
 .hotel-card-type {
  font-size: 18px;
