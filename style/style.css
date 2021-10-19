@@ -16,7 +16,17 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  margin: 0;
+
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -24,6 +34,38 @@ body {
   color: #000000;
 
   background-color: #f2f2f2;
+}
+
+.navigation {
+  display: flex;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-image {
+  display: block;
+
+  margin: 0 auto;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.navigation-list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -34,18 +76,36 @@ body {
   text-decoration: none;
 }
 
+.logo {
+  margin: 0 auto;
+}
+
 .main-down {
+  display: block;
+
+  width: 720px;
+  margin: 0 auto;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
 
+  text-align: center;
   text-transform: uppercase;
 }
 
 .main-down2 {
+  display: flex;
+  align-items: center;
+
+  width: 720px;
+  margin: 0 auto;
+
   font-size: 22px;
   line-height: 36px;
   color: #333333;
+
+  text-align: center;
 }
 
 .cause-title1 {
@@ -277,12 +337,10 @@ body {
 }
 
 .main-img {
-  background-color: blueviolet;
   background-image: url('../images/decorate/mask.png'),
   url('../images/decorate/index-background.jpg');
   background-repeat: no-repeat;
-  background-position: bottom, center;
-  background-size: 1200px 57px, 1200px 485px;
+  background-position: bottom;
 }
 
 .cause-title1 {
@@ -299,6 +357,15 @@ body {
 
 .cause-description {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.cause-item {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  margin: 0;
+  padding: 0;
 }
 
 .cause-item:nth-child(4) {
@@ -329,17 +396,45 @@ body {
 }
 
 .order {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+
   background-color: #ffffff;
 }
 
 .page-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   background-image: url('../images/decorate/background-blur.jpg');
   background-repeat: no-repeat;
   background-size: 1200px 411px;
 }
 
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .contacts {
+  display: flex;
+
   background-color: #ffffff;
+}
+
+.messengers {
+  width: 120px;
+  margin-right: 61px;
+}
+
+.academy-container {
+  width: 115px;
+  margin-left: auto;
 }
 
 .twitter-link {
