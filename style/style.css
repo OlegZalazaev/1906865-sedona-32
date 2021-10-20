@@ -209,6 +209,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.nav-page-item {
+  list-style: none;
+}
+
 .filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -318,6 +322,12 @@ body {
   background-color: #f2f2f2;
 }
 
+.pagination {
+  display: flex;
+
+  list-style: none;
+}
+
 .hotels-number {
   font-size: 18px;
   line-height: 23px;
@@ -403,7 +413,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-
+}
+.page-footer-image {
   background-image: url('../images/decorate/background-blur.jpg');
   background-repeat: no-repeat;
   background-size: 1200px 411px;
@@ -416,8 +427,12 @@ body {
 }
 
 .messengers {
+  display: flex;
+
   width: 120px;
   margin-right: 61px;
+
+  list-style: none;
 }
 
 .academy-container {
@@ -466,6 +481,32 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-footer.without {
+.page-footer-catalog {
   background-color: #ffffff;
+  background-image: none;
 }
+
+.filters {
+  display: flex;
+}
+.filter-name {
+  padding: 0;
+
+  list-style: none;
+}
+.filter-list {
+  padding: 0;
+}
+/* .filter-list:nth-child(1) {
+  width: 150px;
+  margin-right: 67px;
+  margin-left: 71px;
+}
+.filter-list:nth-child(2) {
+  width: 144px;
+  margin-right: 216px;
+}
+.filter-list:nth-child(3) {
+  width: 287px;
+  margin-right: 81px;
+} */
