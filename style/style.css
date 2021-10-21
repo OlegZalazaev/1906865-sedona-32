@@ -413,7 +413,11 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  background-color: #ffffff;
+  background-image: none;
 }
+
 .page-footer-image {
   background-image: url('../images/decorate/background-blur.jpg');
   background-repeat: no-repeat;
@@ -481,19 +485,16 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-footer-catalog {
-  background-color: #ffffff;
-  background-image: none;
-}
-
 .filters {
   display: flex;
 }
+
 .filter-name {
   padding: 0;
 
   list-style: none;
 }
+
 .filter-list {
   padding: 0;
 }
