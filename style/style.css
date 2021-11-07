@@ -36,6 +36,20 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -54,10 +68,18 @@ body {
 .main-image {
   display: block;
 
+  margin: 0 auto ;
   padding-top: 51px;
-  padding-right: 371px;
   padding-bottom: 82px;
-  padding-left: 371px;
+}
+
+.main-img {
+  display: block;
+
+  background-image: url('../images/decorate/mask.png'),
+  url('../images/decorate/index-background.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .main-container {
@@ -87,11 +109,6 @@ body {
   margin-right: 33px;
 }
 
-.navigation-item:last-child {
-  margin-right: 0;
-}
-
-
 .navigation-link {
   display: block;
 
@@ -108,6 +125,10 @@ body {
 
 .navigation-user .navigation-item {
   margin-right: 20px;
+}
+
+.navigation-user .navigation-item:last-child {
+  margin-right: 0;
 }
 
 .navigation-user .navigation-link {
@@ -193,6 +214,7 @@ body {
 .cause-item-flex {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cause-wrap {
@@ -242,6 +264,11 @@ body {
 }
 
 .cause-title {
+  display: block;
+
+  width: 240px;
+  margin: 0;
+
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -416,10 +443,6 @@ body {
   border-radius: 0 10px 10px 0;
 }
 
-.number {
-  margin-left: 60px;
-}
-
 .number-phone {
   display: block;
 
@@ -459,17 +482,8 @@ body {
   padding: 0;
 }
 
-.nav-page-link-home::before {
-  content: '';
-
-  display: block;
-
-  width: 12px;
-  height: 12px;
+.nav-page-link-home {
   margin-right: 11px;
-
-  background-image: url('../images/icons/home.svg');
-  background-repeat: no-repeat;
 }
 
 .nav-page-link {
@@ -512,20 +526,34 @@ body {
   color: #ffffff;
 }
 
-.filter-price-min {
+.flex-price {
+  display: flex;
+}
+
+.filter-price-min,
+.filter-price-max {
   display: block;
 
+  box-sizing: border-box;
   width: 144px;
   height: 48px;
+  padding: 0;
+  padding-left: 19px;
 
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
   background: transparent;
 }
 
-.filter-price-min::placeholder {
+.filter-price-max {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.filter-price-min::placeholder,
+.filter-price-max::placeholder {
   position: relative;
-  left: 112px;
+  left: 90px;
 
   color: #ffffff;
 
@@ -533,34 +561,15 @@ body {
 }
 
 .filter-price-min::-webkit-outer-spin-button,
-.filter-price-min::-webkit-inner-spin-button {
-  display: none;
-}
-
-.filter-price-max {
-  display: block;
-
-  width: 144px;
-  height: 48px;
-
-  border: 2px solid #ffffff;
-  border-left: none;
-  border-radius: 0 4px 4px 0;
-  background: transparent;
-}
-
-.filter-price-max::placeholder {
-  position: relative;
-  left: 107px;
-
-  color: #ffffff;
-
-  opacity: 0.3;
-}
-
+.filter-price-min::-webkit-inner-spin-button,
 .filter-price-max::-webkit-outer-spin-button,
 .filter-price-max::-webkit-inner-spin-button {
   display: none;
+}
+
+.button-flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .button1 {
@@ -572,6 +581,13 @@ body {
 
   border: none;
   background: transparent;
+}
+
+.flex-results {
+  display: flex;
+  align-items: center;
+
+  padding: 44px 72px 42px 71px;
 }
 
 .inner-footer-down {
@@ -669,10 +685,18 @@ body {
   list-style: none;
 }
 
+.pagination-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 72px;
+}
+
 .pagination-page {
   font-size: 20px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 
   text-decoration: none;
@@ -682,15 +706,15 @@ body {
 }
 
 .pagination-item:last-child {
-  margin-right: 301px;
+  margin-right: 0;
 }
 
 .pagination-item .pagination-page {
   display: block;
 
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 15px;
 
   text-align: center;
@@ -719,20 +743,15 @@ body {
 }
 
 .pagination-current {
-  display: block;
-
-  box-sizing: border-box;
-  width: 55px;
-  height: 55px;
-  padding: 18px;
-
-  font-weight: 700;
   color: #000000;
 
-  text-align: center;
-
-  border-radius: 4px;
   background-color: #f2f2f2;
+}
+
+.select-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .hotels-number {
@@ -769,19 +788,6 @@ body {
   color: #333333;
 
   text-align: center;
-}
-
-.main-img {
-  display: block;
-
-  width: 1200px;
-  height: 485px;
-  margin: 0 auto;
-
-  background-image: url('../images/decorate/mask.png'),
-  url('../images/decorate/index-background.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .order {
@@ -835,6 +841,10 @@ body {
   margin-right: 29px;
 }
 
+.contact-phone {
+  margin-left: 60px;
+}
+
 .academy-container {
   display: block;
 
@@ -878,42 +888,6 @@ body {
   border: 2px solid #000000;
 }
 
-.button-list-grid::before {
-  content: '';
-
-  display: block;
-
-  width: 16px;
-  height: 14px;
-
-  background-image: url('../images/icons/sotring-grid.svg');
-  background-repeat: no-repeat;
-}
-
-.button-list-slide::before {
-  content: '';
-
-  display: block;
-
-  width: 16px;
-  height: 14px;
-
-  background-image: url('../images/icons/sotring-slideshow.svg');
-  background-repeat: no-repeat;
-}
-
-.button-list-list::before {
-  content: '';
-
-  display: block;
-
-  width: 16px;
-  height: 14px;
-
-  background-image: url('../images/icons/sorting-list.svg');
-  background-repeat: no-repeat;
-}
-
 .stars {
   background-image: url('../images/icons/star.svg');
   background-repeat: no-repeat;
@@ -923,13 +897,6 @@ body {
   display: flex;
 }
 
-.filters-flex fieldset {
-  width: 287px;
-
-  border: none;
-}
-
-
 .filter-name {
   margin: 0;
   padding: 0;
@@ -937,38 +904,31 @@ body {
   list-style: none;
 }
 
+.filter-name:nth-child(2) {
+  min-width: 125px;
+}
+
 .filter-name1 {
   margin-bottom: 13px;
 }
 
-.filter-list:nth-child(1) {
+.filter-list {
+  box-sizing: border-box;
   margin: 0;
-  margin-right: 67px;
   padding: 0;
+
+  border: none;
+}
+
+.filter-list:nth-child(1) {
+  margin-right: 67px;
 }
 
 .filter-list:nth-child(2) {
-  margin: 0;
   margin-right: 167px;
-  padding: 0;
 }
 
 .filter-list:nth-child(3) {
-  margin: 0;
-  margin-right: 81px;
-  padding: 0;
+  margin-right: 100px;
 }
 
-.visually-hidden {
-  position: absolute;
-
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
-}
