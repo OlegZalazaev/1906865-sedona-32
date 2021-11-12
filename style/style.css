@@ -53,6 +53,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -132,7 +134,7 @@ body {
   cursor: pointer;
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
   box-sizing: border-box;
 
   color: #756257;
@@ -153,7 +155,7 @@ body {
   fill: #756257;
 }
 
-.navigation-link:focus path {
+.navigation-link:focus-visible path {
   fill: #756257;
 }
 
@@ -231,7 +233,7 @@ body {
   background-color: #615048;
 }
 
-.link-here:focus {
+.link-here:focus-visible {
   color: #ffffff;
 
   border-radius: 4px;
@@ -497,7 +499,7 @@ body {
   background-color: #756257;
 }
 
-.button-search:focus {
+.button-search:focus-visible {
   color: #ffffff;
 
   border-radius: 10px;
@@ -540,7 +542,7 @@ body {
   background: #e6e6e6;
 }
 
-.email-type:focus {
+.email-type:focus-visible {
   outline: 3px solid #83b3d3;
   outline-offset: 0;
   background: #e6e6e6;
@@ -560,7 +562,7 @@ body {
   background: #68a2ca;
 }
 
-.button-submit:focus {
+.button-submit:focus-visible {
   outline: 3px solid #756257;
   outline-offset: 0;
   background: #68a2ca;
@@ -598,10 +600,14 @@ body {
 }
 
 .nav-page-link-home {
-  margin-right: 11px;
+  margin-right: 26px;
 }
 
 .nav-page-link {
+  position: relative;
+
+  display: block;
+
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -610,11 +616,14 @@ body {
 .nav-page-link::before {
   content: '';
 
-  display: block;
+  position: absolute;
+  top: 8px;
+  left: -14px;
 
   width: 5px;
   height: 8px;
-  margin-right: 10px;
+
+  pointer-events: none;
 
   opacity: 0.3;
   background-image: url('../images/icons/bigger.svg');
@@ -623,6 +632,16 @@ body {
 
 .nav-page-item {
   list-style: none;
+}
+
+.nav-page-link-home:hover {
+  opacity: 0.6;
+}
+
+.nav-page-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+
+  cursor: pointer;;
 }
 
 .filter-title {
@@ -737,6 +756,10 @@ body {
 .hotel-card {
   margin: 0 72px;
   padding: 0;
+}
+
+.hotel-card-img {
+  display: block;
 }
 
 .hotel-card-link {
@@ -1022,7 +1045,7 @@ body {
   text-align: center;
 }
 
-.messengers-link:focus {
+.messengers-link:focus-visible {
   border-radius: 2px;
   outline: 3px solid #83b3d3;
   outline-offset: 10px;
@@ -1067,8 +1090,8 @@ body {
   fill: #756257;
 }
 
-.number-phone:focus,
-.link-academy:focus {
+.number-phone:focus-visible,
+.link-academy:focus-visible {
   box-sizing: border-box;
 
   color: #756257;
