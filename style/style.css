@@ -135,8 +135,6 @@ body {
 }
 
 .navigation-link:focus-visible {
-  box-sizing: border-box;
-
   color: #756257;
 
   border-radius: 10px;
@@ -644,16 +642,12 @@ body {
 }
 
 .nav-page-link-home:focus-visible {
-  box-sizing: border-box;
-
   border-radius: 4px;
   outline: 3px solid #83b3d3;
 }
 
 .nav-page-link:focus-visible,
 .button1:focus-visible {
-  box-sizing: border-box;
-
   border-radius: 4px;
   outline: 3px solid #83b3d3;
 }
@@ -803,7 +797,7 @@ body {
   display: flex;
   align-items: center;
 
-  padding: 0 72px 14px 71px;
+  padding: 0 72px 42px 71px;
 }
 
 .inner-footer-down {
@@ -844,8 +838,6 @@ body {
 }
 
 .select svg {
-  content: '';
-
   position: absolute;
   top: 21px;
   left: 254px;
@@ -854,8 +846,6 @@ body {
 .select-control:hover,
 .button-list:hover,
 .number-control:hover {
-  box-sizing: border-box;
-
   cursor: pointer;
 
   border: 2px solid #83b3d3;
@@ -865,8 +855,6 @@ body {
 .select-control:focus-visible,
 .button-list:focus-visible,
 .number-control:focus-visible {
-  box-sizing: border-box;
-
   border: 2px solid #83b3d3;
   border-radius: 4px;
   outline: none;
@@ -900,7 +888,9 @@ body {
 .hotel-list {
   display: grid;
 
-  padding: 28px 0;
+  padding: 27px 0;
+
+  border-top: 1px solid #e6e6e6;
 
   grid-template-columns: 180px 37px 159px 160px auto 160px;
   grid-template-rows: 31px auto 37px;
@@ -908,6 +898,7 @@ body {
 
 .hotel-card {
   margin: 0 72px;
+  margin-bottom: 3px;
   padding: 0;
 }
 
@@ -938,8 +929,10 @@ body {
   grid-column: 3/5;
   grid-row: 1/2;
 }
-/* не знаю как сделать в сетке фокус */
-.hotel-card-link-title:focus {
+
+.hotel-card-link-title:focus-visible {
+  width: fit-content;
+
   color: #756257;
 
   border-radius: 1px;
@@ -1019,8 +1012,6 @@ body {
 }
 
 .button-favourites:active {
-  box-sizing: border-box;
-
   color: rgba(255, 255, 255, 0.3);
 
   border: 1px solid #756257;
@@ -1061,6 +1052,13 @@ body {
   grid-row: 3/4;
 }
 
+.border {
+  margin: 0 72px;
+
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
 .pagination {
   display: flex;
 
@@ -1075,6 +1073,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
+  margin-top: 31px;
   padding: 0 72px;
 }
 
@@ -1119,7 +1118,7 @@ body {
   box-sizing: border-box;
   width: 625px;
   height: 55px;
-  margin: 61px auto;
+  margin: 31px auto;
   padding: 17px 227px;
 
   border-style: none;
@@ -1325,8 +1324,6 @@ body {
 
 .number-phone:focus-visible,
 .link-academy:focus-visible {
-  box-sizing: border-box;
-
   color: #756257;
 
   border-radius: 1px;
@@ -1359,12 +1356,27 @@ body {
 }
 
 .stars {
-  background-image: url('../images/icons/star.svg');
-  background-repeat: repeat-x;
-  background-position: 50%;
+  width: 160px;
 
+  background-image: url('../images/icons/star.svg');
+  background-repeat: space;
+  background-position-y: center;
+
+  justify-self: center;
   grid-column: 6/7;
   grid-row: 1/2;
+}
+
+.two-stars {
+  width: 43px;
+}
+
+.three-stars {
+  width: 68px;
+}
+
+.four-stars {
+  width: 85px;
 }
 
 .filters-flex {
