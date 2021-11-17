@@ -79,16 +79,25 @@
               <legend class="filter-title">Инфраструктура:</legend>
               <ul class="filter-name">
                 <li class="filter-name1">
-                  <input class="mark" type="checkbox" name="pool" id="pool-field" checked>
-                  <label class="filter-label" for="pool-field">Бассейн</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="filter-label control-label">Бассейн</span>
+                  </label>
                 </li>
                 <li class="filter-name1">
-                  <input class="mark" type="checkbox" name="parking" id="parking-field" checked>
-                  <label class="filter-label" for="parking-field">Парковка</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="filter-label control-label">Парковка</span>
+                </label>
                 </li>
                 <li class="filet-name1">
-                  <input class="mark" type="checkbox" name="wi-fi" id="wifi-field">
-                  <label class="filter-label" for="wifi-field">Wi-Fi</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                    <span class="control-mark"></span>
+                    <span class="filter-label control-label">Wi-Fi</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -96,40 +105,52 @@
               <legend class="filter-title">Тип жилья:</legend>
               <ul class="filter-name">
                 <li class="filter-name1">
-                  <label class="filter-label">
-                    <input class="dot" type="radio" name="housing" value="hotel" checked>Гостиница
+                  <label class="control filter-label">
+                    <input class="visually-hidden control-input" type="radio" name="housing" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-name1">
-                  <label class="filter-label">
-                    <input class="dot" type="radio" name="housing" value="motel">Мотель
+                  <label class="control filter-label">
+                    <input class="visually-hidden control-input" type="radio" name="housing" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-name1">
-                  <label class="filter-label">
-                    <input class="dot" type="radio" name="housing" value="apartmens">Апартаменты
+                  <label class="control filter-label">
+                    <input class="visually-hidden control-input" type="radio" name="housing" value="apartmens">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-list">
               <legend class="filter-title">Стоимость, &#8381;: </legend>
-              <div class="flex-price">
-                <label class="filter-price">
-                  <input class="filter-price-min" type="text" name="min-price">
-                  от
-                </label>
-                <label class="filter-price">
-                  <input class="filter-price-max" type="text" name="max-price">
-                  до
-                </label>
+              <div class="range">
+                <div class="flex-price">
+                  <label class="filter-price">
+                    <input class="filter-price-min" type="number" name="min-price" placeholder="0">
+                    от
+                  </label>
+                  <label class="filter-price">
+                    <input class="filter-price-max" type="number" name="max-price" placeholder="9000">
+                    до
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 200px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </div>
-              <button class="range-toogle toogle-min" type="button">
-                <span class="visually-hidden">Изменить минимальную цену</span>
-              </button>
-              <button class="range-toogle toogle-max" type="button">
-                <span class="visually-hidden">Изменить максимальную цену</span>
-              </button>
             </fieldset>
             <div class="button-flex">
               <button class="button button-accept" type="submit">Применить</button>
@@ -148,23 +169,11 @@
             <label class="visually-hidden" for="sorting">
               Сортировка
             </label>
-            <div class="select">
-              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.3" clip-path="url(#clip0_13_1196)">
-                  <path d="M6.6 6.69998L11.7 1.39998C12 1.09998 12 0.499976 11.7 0.199976C11.4 -0.100024 10.8 -0.100024 10.5 0.199976L6 4.89998L1.5 0.199976C1.2 -0.100024 0.6 -0.100024 0.3 0.199976C0.1 0.299976 0 0.599976 0 0.799976C0 0.999976 0.1 1.19998 0.3 1.39998L5.4 6.69998C5.7 7.09998 6.3 7.09998 6.6 6.69998Z" fill="black"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_13_1196">
-                    <rect width="12" height="7" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <select class="select-control" id="sorting" name="sotring">
-                <option value="popular">Сначала популярные</option>
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="expensive">Сначала дорогие</option>
-              </select>
-            </div>
+            <select class="select-control" id="sorting" name="sotring">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
             <button class="visually-hidden" type="submit">Отсортировать</button>
           </form>
           <a class="button-list button-list-grid" href="#">
@@ -345,7 +354,7 @@
         </p>
         <form class="email" action="https://echo.htmlacademy.ru/" method="POST">
           <label>
-            <input class="email-type" type="email" name="email" placeholder="Ваш e-mail">
+            <input class="email-type error" type="email" name="email" placeholder="Ваш e-mail" required>
           </label>
           <button class="button button-submit" type="submit">Подписаться</button>
         </form>
