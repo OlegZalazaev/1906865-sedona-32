@@ -106,9 +106,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main>
       <div class="filters">
-        <header class="inner-header">
+        <header>
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="nav-page">
             <li class="nav-page-item">
@@ -125,7 +125,7 @@
             </li>
           </ul>
         </header>
-        <section class="catalog-filter">
+        <section>
           <h2 class="visually-hidden">Список фильтров</h2>
           <form class="filters-flex" action="https://echo.htmlacademy.ru/" method="GET">
             <fieldset class="filter-list">
@@ -135,21 +135,21 @@
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
-                    <span class="filter-label control-label">Бассейн</span>
+                    <span class="filter-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-name1">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                     <span class="control-mark"></span>
-                    <span class="filter-label control-label">Парковка</span>
+                    <span class="filter-label">Парковка</span>
                 </label>
                 </li>
                 <li class="filet-name1">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
                     <span class="control-mark"></span>
-                    <span class="filter-label control-label">Wi-Fi</span>
+                    <span class="filter-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
@@ -161,47 +161,45 @@
                   <label class="control filter-label">
                     <input class="visually-hidden control-input" type="radio" name="housing" value="hotel" checked>
                     <span class="control-mark"></span>
-                    <span class="control-label">Гостиница</span>
+                    <span>Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-name1">
                   <label class="control filter-label">
                     <input class="visually-hidden control-input" type="radio" name="housing" value="motel">
                     <span class="control-mark"></span>
-                    <span class="control-label">Мотель</span>
+                    <span>Мотель</span>
                   </label>
                 </li>
                 <li class="filter-name1">
                   <label class="control filter-label">
                     <input class="visually-hidden control-input" type="radio" name="housing" value="apartmens">
                     <span class="control-mark"></span>
-                    <span class="control-label">Апартаменты</span>
+                    <span>Апартаменты</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-list">
               <legend class="filter-title">Стоимость, &#8381;: </legend>
-              <div class="range">
-                <div class="flex-price">
-                  <label class="filter-price">
-                    <input class="filter-price-min" type="number" name="min-price" placeholder="0">
-                    от
-                  </label>
-                  <label class="filter-price">
-                    <input class="filter-price-max" type="number" name="max-price" placeholder="9000">
-                    до
-                  </label>
-                </div>
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 0px; width: 200px">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную цену</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную цену</span>
-                    </button>
-                  </div>
+              <div class="flex-price">
+                <label class="filter-price">
+                  <input class="filter-price-min" type="number" name="min-price" placeholder="0">
+                  от
+                </label>
+                <label class="filter-price">
+                  <input class="filter-price-max" type="number" name="max-price" placeholder="9000">
+                  до
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0px; width: 200px">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -214,11 +212,11 @@
       </div>
       <section class="results">
         <div class="flex-results">
-          <p class="inner-footer-down"">
+          <p class="inner-footer-down">
             Найдено гостиниц:
             <span class="count">38</span>
           </p>
-          <form class="sorting-type">
+          <form>
             <label class="visually-hidden" for="sorting">
               Сортировка
             </label>
@@ -229,19 +227,19 @@
             </select>
             <button class="visually-hidden" type="submit">Отсортировать</button>
           </form>
-          <a class="button-list button-list-grid" href="#">
+          <a class="button-list" href="#">
             <span class="visually-hidden">Показать сеткой</span>
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" fill="#000"/>
             </svg>
           </a>
-          <a class="button-list button-list-slide" href="#">
+          <a class="button-list" href="#">
             <span class="visually-hidden">Показать слайдами</span>
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000"/>
             </svg>
           </a>
-          <a class="button-list button-list-current button-list-list" href="#">
+          <a class="button-list button-list-current" href="#">
             <span class="visually-hidden">Показать списком</span>
             <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" fill="#000"/>
@@ -352,7 +350,7 @@
         <div class="pagination-flex">
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-page pagination-current pagination-disabled">1</a>
+              <a class="pagination-link pagination-page pagination-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-page" href="#">2</a>
@@ -364,13 +362,13 @@
               <a class="pagination-link pagination-page" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-page pagination-disabled">...</a>
+              <a class="pagination-link pagination-page">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-page" href="#">10</a>
             </li>
           </ul>
-          <form class="select-number">
+          <form>
             <div class="select-flex">
               <label class="hotels-number">
                 Гостиниц на странице:
@@ -388,7 +386,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="page-footer page-footer-inner">
         <h2 class="inner-footer-down">Подпишитесь на рассылку</h2>
@@ -410,7 +407,6 @@
               <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="#83B3D3"/>
               </svg>
-
             </a>
           </li>
           <li class="messengers-items">
