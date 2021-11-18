@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -46,11 +47,11 @@
               </svg>
               <span class="visually-hidden"> Избранное </span>
             </a>
+            <button class="popover-close-button button-close button-light">
+              12
+              <span class="visually-hidden">Закрыть</span>
+            </button>
             <div class="popover popover-cart">
-              <button class="popover-close-button button-close button-light">
-                12
-                <span class="visually-hidden">Закрыть</span>
-              </button>
               <div class="popover-content">
                 <h2 class="visually-hidden popover-title">Корзина</h2>
                 <ul class="carts-items-list">
@@ -256,35 +257,35 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="modal-item arrival-date" for="arrival-date">Дата заезда:</label>
-              <input class="arrival-date-field field mistake success" type="text" onfocus="(this.type='date')" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
+              <input class="arrival-date-field field mistake success" type="text" id="arrival-date" name="arrival-date" placeholder="Укажите дату">
             </p>
             <p class="field-group">
               <label class="modal-item departure-date" for="departure-date">Дата выезда:</label>
-              <input class="departure-date-field field mistake success" type="text" onfocus="(this.type='date')" id="departure-date" name="departure-date" placeholder="Укажите дату">
+              <input class="departure-date-field field mistake success" type="text" id="departure-date" name="departure-date" placeholder="Укажите дату">
             </p>
             <div class="persons-flex">
               <div class="people adult field-group">
-                <p class="modal-item">
+                <label class="modal-item" for="adult">
                   Взрослые:
-                </p>
+                </label>
                 <div class="persons">
-                  <span class="minus">
+                  <button class="minus" type="button">
                     <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="black">
                     </svg>
-                  </span>
-                  <input class="figure" type="text" value="1"/>
-                  <span class="plus">
+                  </button>
+                  <input class="figure" type="text" value="1" id="adult">
+                  <button class="plus" type="button">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                     </svg>
-                  </span>
+                  </button>
                 </div>
               </div>
               <div class="people children field-group">
-                <p class="modal-item">
+                <label class="modal-item" for="child">
                   Дети:
-                </p>
+                </label>
                 <button class="info" type="button">
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
@@ -308,17 +309,17 @@
                   </span>
                 </button>
                 <div class="persons">
-                  <span class="minus">
+                  <button class="minus" type="button">
                     <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                      <path d="M0 0L0 1L13 1V0L0 0Z" fill="black">
                     </svg>
-                  </span>
-                  <input class="figure" type="text" value="1"/>
-                  <span class="plus">
+                  </button>
+                  <input class="figure" type="text" value="1" id="child">
+                  <button class="plus" type="button">
                     <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
                     </svg>
-                  </span>
+                  </button>
                 </div>
               </div>
             </div>
