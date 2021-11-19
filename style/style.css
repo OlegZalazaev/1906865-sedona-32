@@ -1714,6 +1714,10 @@ body {
   grid-row: 1/2;
 }
 
+.one-star {
+  width: 22px;
+}
+
 .two-stars {
   width: 43px;
 }
@@ -1724,6 +1728,10 @@ body {
 
 .four-stars {
   width: 85px;
+}
+
+.five-stars {
+  width: 107px;
 }
 
 .filters-flex {
